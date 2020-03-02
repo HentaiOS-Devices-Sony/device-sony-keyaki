@@ -15,9 +15,9 @@
 include device/sony/tone/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %g8231,$(TARGET_PRODUCT)))
+ifneq (,$(filter %hentai_keyaki_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8231
-else ifneq (,$(filter %g8232,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_keyaki_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8232
 else
 TARGET_BOOTLOADER_BOARD_NAME := G8231
@@ -28,6 +28,16 @@ endif
 PRODUCT_PLATFORM := tone
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=keyaki
+
+#Use Clang instead of Gcc 4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
+
+#kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.9/kernel
+TARGET_NEEDS_DTBOIMAGE := false
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
