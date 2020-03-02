@@ -12,12 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_g8231.mk \
-                     $(LOCAL_DIR)/aosp_g8232.mk
+PRODUCT_MAKEFILES :=  \
+    $(LOCAL_DIR)/hentai_keyaki_RoW.mk \
+    $(LOCAL_DIR)/hentai_keyaki_DSDS.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_g8231-eng \
-    aosp_g8231-userdebug \
-    aosp_g8232-eng \
-    aosp_g8232-userdebug
-
+    hentai_keyaki_RoW-eng \
+    hentai_keyaki_RoW-userdebug \
+    hentai_keyaki_RoW-user \
+    hentai_keyaki_DSDS-eng \
+    hentai_keyaki_DSDS-userdebug \
+    hentai_keyaki_DSDS-user \
