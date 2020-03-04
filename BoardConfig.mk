@@ -19,6 +19,10 @@ ifneq (,$(filter %hentai_keyaki_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8231
 else ifneq (,$(filter %hentai_keyaki_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8232
+else ifneq (,$(filter %hentai_keyaki_DSDS_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := G8232
+else ifneq (,$(filter %hentai_keyaki_RoW_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := G8231
 else
 TARGET_BOOTLOADER_BOARD_NAME := G8231
 $(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
