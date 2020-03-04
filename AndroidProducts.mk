@@ -14,8 +14,10 @@
 
 PRODUCT_MAKEFILES :=  \
     $(LOCAL_DIR)/hentai_keyaki_RoW.mk \
-    $(LOCAL_DIR)/hentai_keyaki_DSDS.mk
-
+    $(LOCAL_DIR)/hentai_keyaki_DSDS.mk \
+    $(LOCAL_DIR)/hentai_keyaki_RoW_Go.mk \
+    $(LOCAL_DIR)/hentai_keyaki_DSDS_Go.mk \
+    
 COMMON_LUNCH_CHOICES += \
     hentai_keyaki_RoW-eng \
     hentai_keyaki_RoW-userdebug \
@@ -23,3 +25,9 @@ COMMON_LUNCH_CHOICES += \
     hentai_keyaki_DSDS-eng \
     hentai_keyaki_DSDS-userdebug \
     hentai_keyaki_DSDS-user \
+    hentai_keyaki_RoW_Go-eng \
+    hentai_keyaki_RoW_Go-userdebug \
+    hentai_keyaki_RoW_Go-user \
+    hentai_keyaki_DSDS_Go-eng \
+    hentai_keyaki_DSDS_Go-userdebug \
+    hentai_keyaki_DSDS_Go-user \
